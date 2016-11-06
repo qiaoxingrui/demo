@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index1/index1",
+    "pages/index2/index2",
+    "pages/index3/index3",
+    "pages/logs/logs",
+    "pages/myCourt/myCourt"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序演示",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+
+
+    "list": [{
+      "pagePath": "pages/index1/index1",
+      "iconPath": "pages/image/wechat.png",
+      "selectedIconPath": "pages/image/wechatHL.png",
+      "text": "商品demo"
+      
+    }, {
+      "pagePath": "pages/myCourt/myCourt",
+      "iconPath": "pages/image/wechat.png",
+      "selectedIconPath": "pages/image/wechatHL.png",
+      "text": "今日课程demo"
+    }, {
+      "pagePath": "pages/index3/index3",
+      "iconPath": "pages/image/wechat.png",
+      "selectedIconPath": "pages/image/wechatHL.png",
+      "text": "注册"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

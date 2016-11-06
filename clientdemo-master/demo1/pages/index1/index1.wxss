@@ -1,0 +1,35 @@
+
+
+/*.list1{ position:absolute; top:0; left:0; width:100rpx; height:100%;border-left-color: black}  */
+/*.list2{ height:100%; }  */
+
+/*scroll-y="true" scroll-x="false" style="position:absolute; top:0; left:0; width:100rpx; height:100%;"  bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="1"*/
+
+
+.flex-wrp{
+    height: 100%;
+    display:flex;
+    background-color: #FFFFFF;
+}
+
+
+
+.item {height: 100rpx}
+.littleItem {height: 50rpx}
+.goodItem{height: 300rpx}
+
+.bc_green{
+    background-color: #09BB07;
+}
+.bc_red{
+    background-color: #F76260;
+}
+.bc_blue{
+    background-color: #10AEFF;
+}
+.bc_yellow{
+    background-color: #FFBE00;
+}
+.bc_gray{
+    background-color: #C9C9C9;
+}

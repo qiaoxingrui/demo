@@ -1,0 +1,155 @@
+
+<view class="content">
+  <view  class="date">
+      <picker mode="date" class="month" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          {{date}}月<image class="date-icon" src="/pages/image/arrow_d_03.png"/>
+      </picker>
+    
+    <view style="width:100%;height:40px;">
+        <view class="calendar">
+            <view class="calendar-container">
+              <text class="calendar-week">一</text>
+              <text class="calendar-day">10</text>
+            </view>
+            <view class="calendar-container">
+              <text class="calendar-week">二</text>
+              <text class="calendar-day">11</text>
+            </view>
+            <view class="calendar-container">
+              <text class="calendar-week">三</text>
+              <text class="calendar-day-selected">12</text>
+            </view>
+            <view class="calendar-container">
+              <text class="calendar-week">四</text>
+              <text class="calendar-day">13</text>
+            </view>
+            <view class="calendar-container">
+              <text class="calendar-week">五</text>
+              <text class="calendar-day">14</text>
+            </view>
+            <view class="calendar-container">
+              <text class="calendar-week">六</text>
+              <text class="calendar-day">15</text>
+            </view>
+            <view class="calendar-container-last">
+              <text class="calendar-week">日</text>
+              <text class="calendar-day">17</text>
+            </view>
+        </view>
+    </view>
+  </view>
+  <scroll-view scroll-y="true" class="court-info-scroll"  bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view class="court-container">
+      <view class="court-sort">
+        <view class="court-sort-content">
+          <text>1~2</text>
+        </view>
+        <view class="court-sort-line"></view>
+      </view>
+      <view class="court-info">
+        <view class="court-info-name">
+          <text>课程名称</text>
+        </view>
+        <view class="court-info-addr">
+          <view class="court-info-iaddr"></view>
+          <text>A210</text>
+        </view>
+        <image src="/pages/image/icon-line1.png" class="court-info-line"/>
+        <view class="court-info-time">
+          <view class="court-info-clock"/>
+          <text>10:30~11:50</text>
+        </view>
+      </view>
+    </view>
+    
+    <view class="court-container">
+      <view class="court-sort">
+        <view class="court-sort-content">
+          <text>3~4</text>
+        </view>
+        <view class="court-sort-line"></view>
+      </view>
+      <view class="court-info">
+        <view class="court-info-name">
+          <text>课程名称</text>
+        </view>
+        <view class="court-info-addr">
+          <view class="court-info-iaddr"></view>
+          <text>A110</text>
+        </view>
+        <image src="/pages/image/icon-line1.png" class="court-info-line"/>
+        <view class="court-info-time">
+          <view class="court-info-clock"/>
+          <text>1:30~2:50</text>
+        </view>
+      </view>
+    </view>
+    <view class="court-container">
+      <view class="court-sort">
+        <view class="court-sort-content">
+          <text>5~6</text>
+        </view>
+        <view class="court-sort-line"></view>
+      </view>
+      <view class="court-info">
+        <view class="court-info-name">
+          <text>课程名称</text>
+        </view>
+        <view class="court-info-addr">
+          <view class="court-info-iaddr"></view>
+          <text>A110</text>
+        </view>
+        <image src="/pages/image/icon-line1.png" class="court-info-line"/>
+        <view class="court-info-time">
+          <view class="court-info-clock"/>
+          <text>1:30~2:50</text>
+        </view>
+      </view>
+    </view>
+    <view class="court-container">
+      <view class="court-sort">
+        <view class="court-sort-content">
+          <text>7~8</text>
+        </view>
+        <view class="court-sort-line"></view>
+      </view>
+      <view class="court-info">
+        <view class="court-info-name">
+          <text>课程名称</text>
+        </view>
+        <view class="court-info-addr">
+          <view class="court-info-iaddr"></view>
+          <text>A110</text>
+        </view>
+        <image src="/pages/image/icon-line1.png" class="court-info-line"/>
+        <view class="court-info-time">
+          <view class="court-info-clock"/>
+          <text>1:30~2:50</text>
+        </view>
+      </view>
+    </view>
+    <view class="court-container">
+      <view class="court-sort">
+        <view class="court-sort-content">
+          <text>9~10</text>
+        </view>
+        <view class="court-sort-line" style="display:none;"></view>
+      </view>
+      <view class="court-info">
+        <view class="court-info-name">
+          <text>课程名称</text>
+        </view>
+        <view class="court-info-addr">
+          <view class="court-info-iaddr"></view>
+          <text>A110</text>
+        </view>
+        <image src="/pages/image/icon-line1.png" class="court-info-line"/>
+        <view class="court-info-time">
+          <view class="court-info-clock"/>
+          <text>1:30~2:50</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  
+</view>

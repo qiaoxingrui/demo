@@ -1,0 +1,81 @@
+<!--<import src="../common/header.wxml" />
+<import src="../common/footer.wxml" />-->
+
+<view class="container">
+
+
+    
+      <form class="page-form">
+        
+            <view class="page-form-view">
+                <picker range="{{countryType}}" bindchange="countryTypeChange" value="{{countryTypeIndex}}">
+                    <view class="page-form-picker-view">
+                        <view class="page-body-form-picker-key">国家:</view>
+                        <view class="page-body-form-picker-value">{{countryType[countryTypeIndex]}}</view>
+                    </view>
+                </picker>
+            </view>
+
+
+            <view class="section section_gap">
+                <action-sheet hidden="flase" bindchange="actionSheetChange">
+                    <block wx:for="{{actionSheetItems}}">
+                        <action-sheet-item class="item" bindtap="bind{{item}}">countryType</action-sheet-item>
+                    </block>
+                    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+                </action-sheet>
+            </view>
+            <view class="page-form-view">
+                <picker range="{{provinceType}}" bindchange="provinceTypeChange" value="{{provinceTypeIndex}}">
+                    <view class="page-form-picker-view">
+                        <view class="page-body-form-picker-key">省份:</view>
+                        <view class="page-body-form-picker-value">{{provinceType[provinceTypeIndex]}}</view>
+                    </view>
+                </picker>
+            </view>
+            <view class="page-form-view">
+                <picker range="{{cityType}}" bindchange="cityTypeChange" value="{{cityTypeIndex}}">
+                    <view class="page-form-picker-view">
+                        <view class="page-body-form-picker-key">城市:</view>
+                        <view class="page-body-form-picker-value">{{cityType[cityTypeIndex]}}</view>
+                    </view>
+                </picker>
+            </view>
+            <view class="page-form-view">
+                <picker range="{{schoolName}}" bindchange="schoolChange" value="{{schoolIndex}}">
+                    <view class="page-form-picker-view">
+                        <view class="page-body-form-picker-key">学校:</view>
+                        <view class="page-body-form-picker-value">{{schoolName[schoolIndex]}}</view>
+                    </view>
+                </picker>
+            </view>
+            
+          
+          
+        
+        <view class="images-wrapper">
+            <view class="page-form-view-column">
+                <text class="images-text">尽情上传自己的照片吧</text>
+                <text class="images-text">请清晰地展露自己的样貌特征，具体感觉请参考照身份证照片，过多的修饰会影响上课考勤哦~</text>
+            </view>
+        
+            <view  class="images-list">
+                <block wx:for="{{imageList}}" wx:for-item="image">
+                    <image src="{{image}}" class="images-image" data-src="{{image}}" bindtap="previewImage"></image>
+                </block>
+                <view class="images-image image-plus" bindtap="chooseImage">
+                    <view class="image-plus-horizontal"></view>
+                    <view class="image-plus-vertical"></view>
+                </view>
+          </view>
+        </view>
+      </form>
+   
+  
+  
+        
+  
+
+
+
+</view>
